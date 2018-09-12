@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+
+ 
+<meta name="color:Background" content="#80613b" />
+<meta name="color:Primary Colour" content="#000000" />
+<meta name="color:Secondary Colour" content="#d9d9d9" />
+<meta name="color:Note Colour" content="#f0f0f0" />
+<meta name="font:Body" content="Helvetica" />
+<meta name="image:Background" content="0" />
+<meta name="if:Infinite Scroll" content="1">
+<meta name="color: Tablet Colour" content="#222222">
+<meta name="color: Coffee Cup Colour" content="#a1275b">
+ 
+
+ 
+<title>{Title}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<link rel="shortcut icon" href="{Favicon}" />
+ 
+
+ 
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+ 
+ 
+ 
+<style type="text/css">
+ 
+
+ 
+body {
+        background-color: {color:Background};
+        font-family: {font:Body};
+        background-attachment: fixed;
+        margin: 0;
+        word-wrap: break-word;
+}
+ 
+/*The Sidebar (part 4)*/
+ 
+#sidebar {
+        background-color: {color:Note Colour};
+        opacity: 1;
+        width: 220px;  
+        position: fixed;
+        top: 150px;
+        left: 170px;
+        ms-transform: rotate(-7deg); /* IE 9 */
+        -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+        transform: rotate(-7deg);
+        border-radius: 2px;
+        height: 270px;
+}
+ 
+/*The Sidebar: Title*/
+ 
+#sidebar .title {
+     color: {color: Primary Colour};
+        font-family: 'MV Boli';
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+
+        
+}
+
+#sidebar .title a{
+        text-decoration: underline;
+        color: {color: Primary Colour};
+        color: inherit;
+        
+}
+
+ 
+/*The Sidebar: Description*/
+ 
+#sidebar .description {
+        color: black;
+        font-size: 15px;
+        text-align: center;
+        padding:10px;
+        line-height:100%;
+        height: 130px;
+        font-family:'MV Boli';
+}
+
+#sidebar .pagination{
+    text-decoration: none;
+    color: {color: Primary Colour};
+    color: inherit;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: {color: Primary Colour};
+    color: inherit;
+}
+
+ 
+
+ 
+/*The Main Content (Part 6)*/
+       
+#content {
+    
+    background-color: {color:Secondary Colour};
+    opacity: 1;
+    margin: 70px 0 60px 460px;
+    padding: 10px 0;
+    padding-left: 10px;
+    padding-right: 0px;
+    color: black;
+    height: 400px;
+    width: 400px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    
+    border-style: solid;
+    border-color: {color: Tablet Colour};
+    border-width: 15px;
+    border-bottom-width: 55px;
+    border-top-width: 50px;
+    border-radius: 10px;
+
+}
+ 
+#content a {
+    color: {color:Primary Colour};
+    text-decoration: none;
+}
+ 
+#content blockquote {
+    border-left: solid 2px black;
+    margin: 0;
+    padding-left: 10px;
+}
+ 
+img {
+    border: 0;
+    max-width: 100%;
+}
+ 
+#content #posts {
+    background-color: white;
+    width: 355px;
+    margin-top: 0px;
+    padding:15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ 
+#content #posts .title {
+    font-size: 22px;
+}
+ 
+#content #posts .text {
+    font-size:11px;
+}
+ 
+/***************************/
+ 
+/*The Permalink and Tags (part 7)*/
+ 
+#content #posts #permalink {
+    font-size:9px;
+    margin-top:10px;
+}
+ 
+#content #posts #tags {
+      font-size:9px;
+}
+
+/*Note Container (part 7)*/
+ 
+#content #notecontainer {
+    margin-top: 10px;
+    width: 355px;
+    font-size: 11px;
+    background-color: white;
+    padding: 15px;
+}
+ 
+#content #notecontainer ol.notes {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+ 
+#content #notecontainer img.avatar {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+#content #source{
+    padding-top: 5px;
+    font-size: 9px;
+}
+
+.sources
+{
+
+font-size: 11px;
+
+}
+
+.like_and_reblog_buttons {
+                list-style: none;
+            }
+
+            .like_and_reblog_buttons li {
+                position: relative;
+                bottom: 25px;
+                right: 0px;
+                float: right;
+                margin: 0;
+                padding: 7px 10px;
+                height: 20px;
+            }
+#sidebar2 {
+        background-color: {color:Note Colour};
+        opacity:1;
+        width: 220px;  
+        position: fixed;
+        top: 350px;
+        left: 960px;
+        ms-transform: rotate(4deg); /* IE 9 */
+        -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+        transform: rotate(4deg);
+        font-family: 'MV Boli';
+        height: 200px;
+        border-radius: 2px;
+        
+}
+
+#sidebar2 .links {
+        color: {color:Primary Colour};
+        font-size: 15px;
+        margin: 0px;
+        float: left;
+        width: 200px;
+        padding: 3px 10px;
+        font-family:'MV Boli';
+}
+   
+#sidebar2 .links a {
+        text-decoration:none;
+}
+ 
+/*The Sidebar: Pagination (part 8)*/
+ 
+ 
+/***************************/
+#creator {
+    background-color: white;
+    border-radius: 5px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration:none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: ;
+}
+#creator a{
+    color: {color:Primary Colour};
+    color: inherit;
+    text-decoration: none;
+}
+
+#camera {
+    background-color: black;
+    width: 8px;
+    height: 8px;
+border-radius: 70px;
+position: absolute;
+top: 90px;
+left: 680px;
+}
+
+#homebutton {
+    background-color: #0e0c14;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    top: 553px;
+    left: 670px;
+    border-style: solid;
+    border-color: #98a6ab;
+    border-width: 1px;
+    
+}
+
+#coffeecup {
+   background-color: {color: Coffee Cup Colour};
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+    position: absolute;
+    top: 50px;
+    left: 1000px;
+}
+
+#coffeecuphandle {
+    background-color: {color: Coffee Cup Colour};
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+    top: 210px;
+    left: 1160px;
+    ms-transform: rotate(35deg); /* IE 9 */
+        -webkit-transform: rotate(35deg); /* Chrome, Safari, Opera */
+        transform: rotate(35deg);
+}
+
+#coffee {
+    background-color: #523a19;
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+    position: absolute;
+    top: 70px;
+    left: 1020px;
+}
+#content::-webkit-scrollbar {width:5px;}
+::-webkit-scrollbar-button:start:decrement
+::-webkit-scrollbar-button:end:increment {display:block;height:0;background-color:transparent;}
+::-webkit-scrollbar-track-piece {background-color:#fff;-webkit-border-radius:0;-webkit-border-bottom-right-radius:3px;-webkit-border-bottom-left-radius:3px;}
+::-webkit-scrollbar-thumb:vertical {height:100px; background-color:gray;-webkit-border-radius:20px;}
+
+ 
+/*Custom CSS (part 8)*/
+ 
+{CustomCSS}    
+ 
+</style>
+ 
+<!--Infinite Scroll (part 8)-->
+ 
+{block:IfInfiniteScroll}
+<script type="text/javascript" src="http://codysherman.com/tools/infinite-scrolling/code"></script>
+{/block:IfInfiniteScroll}
+ 
+</head>
+<body>
+ 
+<!--The Sidebar (part 4)-->
+ 
+<div id="sidebar">
+<div class="title"><a href="/">{Title}</a></div>
+<div class="description">{Description}</div>
+
+{block:IfNotInfiniteScroll}
+<div class="pagination">
+{block:PreviousPage}<a href="{PreviousPage}">? </a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}"> ?</a>{/block:NextPage}
+</div>
+{/block:IfNotInfiniteScroll}
+</div> <!--sidebar-->
+
+ 
+<!--------------------------->
+ 
+<div id = "sidebar2"><p></p><center><u><b>LINKS</b></u></center><p></p>{block:AskEnabled}<a href="/ask"><div class="links">--{AskLabel}</div></a>{/block:AskEnabled}
+{block:SubmissionsEnabled}<a href="/submit"><div class="links">--{SubmitLabel}</div></a>{/block:SubmissionsEnabled}
+{block:HasPages}{block:Pages}<a href="{url}"><div class="links">--{Label}</div></a>{/block:Pages}{/block:HasPages}</div>
+ 
+<!--Pagination (part 8)-->
+ 
+
+ 
+<div id="content">
+<div class="autopagerize_page_element">
+{block:Posts}
+<div id="posts">
+ 
+{block:Photo}
+{LinkOpenTag}<img src="{PhotoURL-500}" />{LinkCloseTag}
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Photo}
+ 
+{block:Photoset}
+{Photoset-500}
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Photoset}
+ 
+{block:Video}
+{Video-500}
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Video}
+ 
+{block:Audio}
+{AudioPlayerBlack}
+<div class="text">~ {PlayCountWithLabel}</div>
+{block:Caption}<div class="text">{Caption}</div>{/block:Caption}
+{/block:Audio}
+ 
+{block:Quote}
+<div class="title">“{Quote}”</div>
+{block:Source}<div class="text"><br>~ {Source}</div>{/block:Source}
+{/block:Quote}
+ 
+{block:Text}
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+<div class="text">{Body}</div>
+{/block:Text}
+ 
+{block:Answer}
+<div class="title">{Question}</div>
+<div class="text">~ {Asker}</div>
+<div class="text">{Answer}</div>
+{block:Answer}
+ 
+{block:Chat}
+{block:Title}<div class="title">{Title}</div>{/block:Title}
+<div class="text">
+{block:Lines}
+{block:Label}<strong>{Label}</strong>{/block:Label} {Line}<br />
+{/block:Lines}
+</div> <!--text-->
+{/block:Chat}
+ 
+{block:Link}
+<div class="title"><a href="{URL}">{Name}</a></div>
+{block:Description}
+<div class="text">{Description}</div>
+{/block:Description}
+{/block:Link}
+ 
+<!--------------------------->
+
+<p></p>
+<div class="sources">
+{block:ContentSource}
+(Source: <a href="{SourceURL}">{SourceTitle})</a> 
+{/block:ContentSource}</div>
+ 
+<!--The Permalink (Part 7)-->
+<div id="permalink">
+<a href="{Permalink}">
+{block:Date}{lang:Posted TimeAgo}{/block:Date}
+{block:NoteCount} with {NoteCountWithLabel}{/block:NoteCount}
+</a>
+</div> 
+ 
+{block:HasTags}<div id="tags">
+{block:Tags}#<a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}.
+</div> <!--tags-->
+{/block:HasTags}
+
+
+ <ul class="like_and_reblog_buttons">
+              <li>{LikeButton}</li>
+              <li>{ReblogButton}</li>
+          </ul>
+          
+          
+</div> <!--posts-->
+ 
+
+<!--Note Container (Part 7)-->
+ 
+{block:PostNotes}
+<div id="notecontainer">{PostNotes}</div>
+{/block:PostNotes}
+
+
+
+
+
+ 
+{/block:Posts}
+</div> <!--autopagerize_page_element-->
+</div> <!--content-->
+
+<div id = "creator"><a href = "http://sashi-themes.tumblr.com/">?
+</FORM></a></div>
+
+<div id = "camera"></div>
+<div id = "homebutton"></div>
+
+<div id="coffeecup"></div>
+<div id="coffeecuphandle"></div>
+<div id = "coffee"></div>
+
+ 
+</body>
+</html>
