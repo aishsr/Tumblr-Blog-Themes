@@ -6,9 +6,9 @@
  
 <!--Customisation Options (part 2)-->
  
-<meta name="color:gradient bg 1" content=”#ffef99” />
-<meta name="color:gradient bg 2" content=”#f2992e” />
-<meta name="if:gradient bg" content=”1”/>
+<meta name="color:gradient bg 1" content=â€#ffef99â€ />
+<meta name="color:gradient bg 2" content=â€#f2992eâ€ />
+<meta name="if:gradient bg" content=â€1â€/>
 
 <meta name="color:Primary Colour" content="#03999b" />
 <meta name="color:Secondary Colour" content="#4cc3c5" />
@@ -38,7 +38,7 @@
 /*The Background (part 3)*/
  
 body {
-        background-image:url(‘{image:background}’);
+        background-image:url(â€˜{image:background}â€™);
         {block:ifgradientbg}
 -o-linear-gradient(bottom, {color:gradient bg 2}, {color:gradient bg 1} ); background-image: -moz-linear-gradient(bottom, {color:gradient bg 2}, {color:gradient bg 1}); background-image: -webkit-linear-gradient(bottom, {color:gradient bg 2}, {color:gradient bg 1}); background-image: -ms-linear-gradient(bottom, {color:gradient bg 2}, {color:gradient bg 1}); background-image: linear-gradient(bottom, {color:gradient bg 2}, {color:gradient bg 1});
 {/block:ifgradientbg}
@@ -281,8 +281,8 @@ img {
  
 {block:IfNotInfiniteScroll}
 <div class="pagination">
-{block:PreviousPage}<a href="{PreviousPage}">« </a>{/block:PreviousPage}
-{block:NextPage}<a href="{NextPage}"> »</a>{/block:NextPage}
+{block:PreviousPage}<a href="{PreviousPage}">Â« </a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}"> Â»</a>{/block:NextPage}
 </div>
 {/block:IfNotInfiniteScroll}
  
@@ -320,7 +320,7 @@ img {
 {/block:Audio}
  
 {block:Quote}
-<div class="title">“{Quote}”</div>
+<div class="title">â€œ{Quote}â€</div>
 {block:Source}<div class="text"><br>~ {Source}</div>{/block:Source}
 {/block:Quote}
  
